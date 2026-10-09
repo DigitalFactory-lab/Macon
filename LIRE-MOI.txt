@@ -1,0 +1,72 @@
+DÉCLIC CHANTIER — VERSION LOCALE
+
+UTILISER LE SUPPORT
+1. Extraire tout le ZIP dans un dossier.
+2. Ouvrir Declic-Chantier/index.html dans un navigateur récent.
+3. Conserver les fichiers et le dossier assets ensemble.
+
+Le support, les images, les polices, le guide et l’exemple de calcul sont locaux.
+Activer JavaScript pour les interactions.
+La création avec l’IA, le Genially et les liens de documentation demandent
+une connexion. Le Genially s’ouvre dans un nouvel onglet ; le site reste ouvert
+pour la mise en pratique.
+La vidéo de construction est incluse dans assets/impression-3d-beton.mp4.
+Elle est lisible hors connexion avec les commandes du lecteur du navigateur.
+Le lien Ouvrir la vidéo en grand donne accès au même fichier local.
+
+NAVIGUER DANS L’ATELIER
+Le menu des cinq demi-journées se trouve au début du parcours.
+Sur un petit écran, ses boutons se répartissent sur plusieurs lignes.
+
+GUIDE DE CONCEPTION
+Séance 04 > Ensuite / Mettre en pratique > Ouvrir le guide de création.
+Les stagiaires choisissent leur propre besoin. Le guide est une fiche pédagogique
+à lire ou à imprimer, avec un modèle de demande et un exemple. Il ne contient
+pas de formulaire ni de générateur de prompt. La demande est rédigée par les
+stagiaires dans l’outil d’IA présenté par le formateur.
+
+ACCÈS FORMATEUR À L’EXEMPLE
+Sur l’accueil, cliquer trois fois de suite sur le logo Digital Factory en
+bas de page. L’accès fonctionne aussi avec Alt + Maj + F au clavier.
+Le bouton Ouvrir l’exemple et un lien dans la séance 04 deviennent visibles.
+Le bouton Masquer referme cet accès. Le mode est masqué à chaque rechargement.
+Il s’agit d’un masquage pédagogique, sans mot de passe.
+
+APPLICATION COMBIEN DE BLOCS ?
+Exemple personnalisé à partir du fichier fourni. Les deux modes,
+les schémas et le parcours de calcul des blocs et du mortier sont conservés.
+Les valeurs de saisie sont mémorisées dans ce navigateur si celui-ci
+l’autorise. Nouveau mur permet de recommencer.
+La lecture vocale dépend du navigateur et des voix disponibles sur l’appareil.
+Les hypothèses et les sources sont indiquées en bas de l’application.
+
+VISUELS
+L’image d’accueil est une illustration générée, avec des cotes indicatives.
+La photo du deuxième défi provient du support Genially fourni.
+Le visuel du tendeur a été régénéré à partir de la photo fournie.
+L’animation brique/plan respecte le réglage de réduction des mouvements.
+Voir IMAGE-SOURCES.txt pour les sources et le prompt de génération.
+
+Le fond du bilan représente un coffre métallique avec des outils de maçon, symbole du bagage professionnel.
+L’introduction utilise le visuel avec la grande truelle au premier plan : assets/maison-truelle-perspective.webp.
+
+MISE À JOUR DU 9 OCTOBRE 2026
+Gravure Digital Factory discrète, suivant le bord de la truelle.
+Introduction adaptée à la hauteur de l’écran sur ordinateur.
+Guide : repères numérotés, pictogrammes, demande à compléter et exemple côte à côte.
+Application : ajout de la vérification par les blocs au m² et la règle de trois.
+Les données enregistrées par la précédente version de l’application sont reprises.
+
+CORRECTIONS
+Perspective de la gravure Digital Factory retravaillée dans le plan de la lame.
+Guide de création : fiche pédagogique statique avec modèle et exemple.
+
+REPÈRE LOGICIEL — PREMIÈRE DEMI-JOURNÉE
+Après les deux défis, présentation de Fusion : esquisse, extrusion et contrôle
+du modèle. Distinction entre modélisation et préparation de l’impression,
+avec un exercice de vérification en binôme.
+
+RETOUR AU MENU
+La languette MENU reste fixée au bord droit sur l’accueil, le guide et
+l’application. Elle ramène au menu des demi-journées, également depuis
+une image agrandie. Sur l’accueil, la séance sélectionnée est conservée.
