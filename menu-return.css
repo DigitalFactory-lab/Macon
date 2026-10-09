@@ -1,0 +1,8 @@
+/* Accès permanent au menu de l’atelier, y compris sur les pages annexes. */
+.menu-return{position:fixed;z-index:80;right:0;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;box-sizing:border-box;width:44px;min-height:112px;padding:14px 8px;border:1px solid #00102a;border-right:0;border-radius:10px 0 0 10px;background:#00102a;color:#fff;font:600 12px/1.2 "DM Sans",system-ui,sans-serif;text-decoration:none;box-shadow:-3px 3px 14px #00102a20;cursor:pointer;touch-action:manipulation;transition:background .18s,color .18s}
+.menu-return svg{width:19px;height:19px;flex:none;color:#ff9869}
+.menu-return span{writing-mode:vertical-rl;letter-spacing:.06em}
+.menu-return:hover{background:#ff753b;color:#00102a}.menu-return:hover svg{color:#00102a}
+.menu-return:focus-visible{outline:3px solid #ff753b;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.menu-return{transition:none}}
+@media print{.menu-return{display:none!important}}
