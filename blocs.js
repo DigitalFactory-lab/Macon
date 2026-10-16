@@ -156,29 +156,6 @@ function drawM2(o){
   s+=`<text x="${W/2}" y="${y0+side+30}" text-anchor="middle" font-size="22" font-weight="700" fill="var(--blue)" font-family="var(--f)">1 m × 1 m = 1 m²</text>`;
   return s+`</svg>`;
 }
-function drawBloc(o){
-  const bl=o.bl||39, bh=o.bh||19, j=(o.j==null?1:o.j);
-  const W=560,H=280, k=Math.min(360/(bl+j),170/(bh+j));
-  const x0=110,y0=50,w=bl*k,h=bh*k,jw=Math.max(j*k,4);
-  let s=svgOpen(W,H);
-  s+=`<rect x="${x0}" y="${y0}" width="${w+jw}" height="${h+jw}" fill="var(--joint)" stroke="var(--muted)" stroke-dasharray="6 4" stroke-width="2"/>`;
-  s+=`<rect x="${x0}" y="${y0+jw}" width="${w}" height="${h}" fill="var(--bloc)" stroke="var(--ink)" stroke-width="3" rx="2"/>`;
-  s+=`<text x="${x0+w+jw+10}" y="${y0+jw/2+7}" font-size="17" font-weight="700" fill="var(--muted)" font-family="var(--f)">joint ${o.j!=null?nf(j,1)+" cm":""}</text>`;
-  s+=arrowH(x0,x0+w,y0+jw+h+36,o.bl?nf(bl,1)+" cm":"longueur");
-  s+=arrowV(x0-34,y0+jw,y0+jw+h,o.bh?nf(bh,1)+" cm":"hauteur");
-  return s+`</svg>`;
-}
-function drawRang(o){
-  const W=560,H=200; let s=svgOpen(W,H);
-  if(!o.pas||!o.Lcm) return s+`</svg>`;
-  const x0=20,w=W-40,k=w/o.Lcm, ph=56, y0=40;
-  const pw=o.pas*k, n=Math.floor(o.parRang+1e-9), rest=o.parRang-n;
-  for(let i=0;i<n && i<200;i++) s+=`<rect x="${x0+i*pw+1}" y="${y0}" width="${pw-2}" height="${ph}" fill="var(--bloc)" stroke="var(--ink)" stroke-width="1.5"/>`;
-  if(rest>0.01) s+=`<rect x="${x0+n*pw+1}" y="${y0}" width="${rest*pw-2}" height="${ph}" fill="var(--cut)" stroke="var(--bloc-dark)" stroke-dasharray="4 3" stroke-width="1.5"/>`;
-  if(n<=30) for(let i=0;i<n;i++) s+=`<text x="${x0+i*pw+pw/2}" y="${y0+ph/2+6}" text-anchor="middle" font-size="${Math.min(16,pw*.5)}" font-weight="700" fill="var(--ink)" font-family="var(--f)">${i+1}</text>`;
-  s+=arrowH(x0,x0+w,y0+ph+40,nf(o.Lcm,1)+" cm");
-  return s+`</svg>`;
-}
 function drawTile(t){
   const creux=t==="creux";
   return `<svg viewBox="0 0 120 56" aria-hidden="true"><rect x="10" y="8" width="100" height="40" rx="3" fill="var(--bloc)" stroke="var(--ink)" stroke-width="2.5"/>
