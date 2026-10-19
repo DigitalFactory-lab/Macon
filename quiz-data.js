@@ -2,71 +2,55 @@
 window.WorkshopQuizzes = {
   "1": {
     "title": "À deux, on voit plus juste",
-    "reflection": "Aujourd’hui, à quel moment ton binôme t’a-t-il aidé à mieux comprendre ou à vérifier ?",
+    "reflection": "À quel moment ton binôme t’a-t-il aidé à comprendre ou à vérifier ?",
     "questions": [
       {
         "title": "Deux mesures différentes",
-        "skills": "Rigueur · coopération",
-        "situation": "Ton binôme et toi obtenez deux mesures différentes pour la même pièce. Tu proposes de…",
+        "situation": "Ton binôme et toi trouvez deux mesures différentes pour la même pièce. Que proposes-tu ?",
         "options": [
-          "Garder la mesure de la personne qui utilise le mieux l’outil.",
-          "Reprendre ensemble la mesure en comparant les points de départ, la lecture et les unités.",
-          "Faire la moyenne des deux valeurs pour continuer."
+          "Garder la mesure de la personne la plus expérimentée.",
+          "Reprendre ensemble la mesure en comparant les points de départ et les unités.",
+          "Faire la moyenne des deux mesures."
+        ],
+        "feedback": [
+          "L’expérience aide, mais une erreur reste possible. Même avec un collègue expérimenté, comparer la manière de mesurer permet de comprendre l’écart.",
+          "Vous cherchez l’origine de l’écart avant de décider. Cette habitude peut éviter de couper une pièce trop courte ou de commander une mauvaise dimension.",
+          "La moyenne donne un nouveau nombre sans expliquer la différence. Avant de fabriquer ou d’acheter quelque chose, mieux vaut retrouver la mesure juste."
         ],
         "preferred": 1,
-        "feedback": [
-          "L’expérience est utile, mais elle ne permet pas d’expliquer l’écart. Vérifiez la méthode ensemble.",
-          "Vous cherchez l’origine de l’écart avant de retenir une valeur.",
-          "La moyenne donne un nouveau nombre, mais elle peut masquer une erreur de mesure."
-        ]
+        "skills": "Rigueur · coopération"
       },
       {
         "title": "Une consigne pas très claire",
-        "skills": "Respect des consignes · communication",
-        "situation": "Tu comprends le résultat attendu, mais une étape de la consigne reste floue. Tu…",
+        "situation": "Tu comprends le résultat attendu, mais une étape de la consigne reste floue. Que fais-tu ?",
         "options": [
-          "Expliques ce que tu as compris et demandes une précision sur cette étape.",
-          "Commences comme tu le penses et demandes une vérification à la fin.",
-          "Regardes comment un autre binôme s’y prend et fais pareil."
+          "Expliquer ce que tu as compris et demander une précision.",
+          "Commencer comme tu le penses et demander à la fin.",
+          "Copier ce que fait le binôme voisin."
+        ],
+        "feedback": [
+          "Tu poses une question précise pour pouvoir avancer. Dans une activité nouvelle, clarifier une consigne peut éviter de devoir tout recommencer.",
+          "Tu avances, mais tu risques de découvrir trop tard une mauvaise interprétation. Une vérification au départ peut faire gagner du temps.",
+          "Observer peut aider, mais le voisin peut aussi se tromper. Tu dois pouvoir expliquer ce que tu fais et pourquoi."
         ],
         "preferred": 0,
-        "feedback": [
-          "Ta question est précise : le formateur peut clarifier ce qui te manque avant que tu agisses.",
-          "Tu avances, mais une mauvaise interprétation peut t’obliger à recommencer.",
-          "Observer peut aider, mais l’autre binôme peut aussi avoir mal compris."
-        ]
+        "skills": "Respect des consignes · communication"
       },
       {
-        "title": "Qui fait quoi ?",
-        "skills": "Coopération · engagement",
-        "situation": "Ton binôme maîtrise mieux l’ordinateur et propose de tout faire pour gagner du temps. Tu…",
+        "title": "Peut-on se fier au plan ?",
+        "situation": "Un plan indique trois parties de 1 100 mm, 1 500 mm et 1 100 mm. Le total annoncé est de 3 600 mm. Que constates-tu ?",
         "options": [
-          "Le laisses manipuler pendant que tu observes toute l’activité.",
-          "Prends la souris pour réaliser ta moitié sans son aide.",
-          "Proposes d’alterner : l’un manipule, l’autre guide et vérifie, puis vous échangez."
+          "La somme donne 3 700 mm : il faut clarifier l’écart.",
+          "Le total écrit suffit : inutile de refaire le calcul.",
+          "Il faut modifier une des trois dimensions pour obtenir 3 600 mm."
         ],
-        "preferred": 2,
         "feedback": [
-          "Observer aide à comprendre, mais tu as aussi besoin d’essayer.",
-          "Chacun participe, mais vous perdez l’occasion de vous aider pendant la manipulation.",
-          "Chacun essaie, explique et contribue à la vérification."
-        ]
-      },
-      {
-        "title": "Les cotes du plan concordent-elles ?",
+          "Tu as repéré 100 mm de différence. Avant de fabriquer à partir d’un plan, comparer les indications permet d’éviter de reproduire une erreur.",
+          "Une information écrite peut contenir une erreur. Un plan sert de référence, mais ses indications doivent aussi être comprises et vérifiées.",
+          "Tu ne sais pas quelle indication est à corriger. Dans une situation réelle, mieux vaut demander une clarification que choisir une dimension au hasard."
+        ],
+        "preferred": 0,
         "skills": "Lecture de plan · contrôle des données",
-        "situation": "Un plan indique trois hauteurs : 1 100 mm, 1 500 mm et 1 100 mm. La hauteur totale annoncée est de 3 600 mm. Que constates-tu ?",
-        "options": [
-          "La somme est de 3 700 mm : il y a un écart de 100 mm à clarifier.",
-          "La somme est de 3 600 mm : les cotes concordent.",
-          "Il suffit de choisir la hauteur totale et d’ignorer les autres cotes."
-        ],
-        "preferred": 0,
-        "feedback": [
-          "1 100 + 1 500 + 1 100 = 3 700 mm. Cela dépasse de 100 mm la hauteur totale annoncée. Il faut clarifier le plan avant de le valider.",
-          "Refais l’addition : elle donne 3 700 mm, et non 3 600 mm. Une cote affichée ne dispense pas du contrôle.",
-          "Les cotes se contredisent. Sans clarification, tu ne sais pas laquelle doit être corrigée."
-        ],
         "type": "knowledge"
       }
     ]
@@ -77,137 +61,137 @@ window.WorkshopQuizzes = {
     "questions": [
       {
         "title": "Prêt à lancer ?",
-        "skills": "Anticipation · responsabilité",
-        "situation": "Tout semble prêt. Tu ne sais pas si la vérification demandée avant le lancement a été faite. Tu…",
+        "situation": "Tout semble prêt, mais tu ne sais pas si le contrôle demandé avant le lancement a été fait.",
         "options": [
-          "Lances, puisque personne n’a signalé de souci.",
-          "Demandes confirmation et attends la validation prévue.",
-          "Demandes à ton binôme de lancer, puisqu’il est plus à l’aise."
+          "Tu lances puisque personne ne signale de souci.",
+          "Tu demandes confirmation et attends la validation prévue.",
+          "Tu demandes à ton binôme de lancer à ta place."
+        ],
+        "feedback": [
+          "Le silence ne confirme pas qu’un contrôle a été réalisé. Avec un outil partagé, chacun doit savoir ce qui a été vérifié avant de démarrer.",
+          "Tu lèves le doute avant d’agir. Cette habitude est utile lorsqu’une action engage du matériel, du temps ou le travail d’autres personnes.",
+          "Changer de personne ne remplace pas la vérification. Vous avez besoin de la même information pour décider de démarrer."
         ],
         "preferred": 1,
-        "feedback": [
-          "L’absence de remarque ne confirme pas que le contrôle a été réalisé.",
-          "Tu lèves le doute avant d’engager l’action.",
-          "Changer de personne ne remplace pas la vérification attendue."
-        ]
+        "skills": "Anticipation · responsabilité"
       },
       {
         "title": "Une observation à expliquer",
-        "skills": "Observation · communication",
-        "situation": "Le formateur demande ce que tu as remarqué pendant la démonstration. Tu n’es pas certain de ton explication. Tu…",
+        "situation": "Le formateur te demande ce que tu as remarqué pendant une démonstration. Tu n’es pas certain de ton explication.",
         "options": [
-          "Décris ce que tu as vu, puis précises ce qui reste une hypothèse.",
-          "Donnes l’explication qui te semble la plus logique sans exprimer ton doute.",
-          "Reprends l’explication de ton binôme, même si tu ne la comprends pas encore."
+          "Tu décris ce que tu as vu, puis précises ce que tu supposes.",
+          "Tu donnes l’explication qui te semble logique sans exprimer ton doute.",
+          "Tu reprends l’explication de ton binôme sans l’avoir comprise."
+        ],
+        "feedback": [
+          "Tu distingues l’observation de ton explication. Pour décrire une pièce ou signaler une difficulté, cela aide les autres à comprendre et à chercher avec toi.",
+          "Une explication plausible peut être inexacte. Dire ce qui reste à vérifier permet de poursuivre la recherche ensemble.",
+          "Tu risques de transmettre une information que tu ne peux pas expliquer. Demander un exemple ou une démonstration t’aidera à te l’approprier."
         ],
         "preferred": 0,
-        "feedback": [
-          "Tu distingues ton observation de ton interprétation. Cela permet d’en discuter.",
-          "Une explication plausible mérite aussi d’être vérifiée.",
-          "Demande à ton binôme de t’expliquer son raisonnement avant de le reprendre."
-        ]
+        "skills": "Observation · communication"
       },
       {
         "title": "Pendant l’attente",
-        "skills": "Organisation · initiative",
-        "situation": "La machine travaille. Tu as du temps avant la prochaine étape. Tu…",
+        "situation": "La machine travaille. Vous avez du temps avant la prochaine étape.",
         "options": [
-          "Attends près de la machine jusqu’à la fin.",
-          "Commences une nouvelle tâche sans en parler au binôme.",
-          "Vérifies ce qu’il reste à préparer et conviens avec ton binôme d’une tâche utile."
+          "Tu attends sans chercher ce qui reste à faire.",
+          "Tu commences une autre tâche sans prévenir ton binôme.",
+          "Vous convenez d’une tâche utile pour préparer la suite."
+        ],
+        "feedback": [
+          "Observer la fabrication peut être utile. Tu peux aussi regarder avec ton binôme ce qui aiderait à préparer la suite.",
+          "Tu prends une initiative, mais ton binôme peut perdre le fil. Annoncer ce que tu proposes aide à garder une organisation commune.",
+          "Vous utilisez le temps disponible avec un objectif commun. Préparer les mesures ou les critères de contrôle peut faciliter la réception de la pièce."
         ],
         "preferred": 2,
-        "feedback": [
-          "Observer peut être utile. Demande-toi aussi ce que tu pourrais préparer pendant ce temps.",
-          "Tu prends une initiative, mais ton binôme risque de perdre le fil.",
-          "Tu utilises l’attente pour anticiper, en gardant une organisation commune."
-        ]
+        "skills": "Organisation · initiative"
       },
       {
-        "title": "Du modèle à l’objet",
-        "skills": "Acculturation numérique · chaîne de fabrication",
-        "situation": "Quel enchaînement décrit le passage de la brique numérique à la pièce imprimée ?",
+        "title": "Du fichier à l’objet",
+        "situation": "Une pièce est dessinée à l’écran. Que reste-t-il à faire avant de pouvoir l’utiliser ?",
         "options": [
-          "L’imprimante lit directement le plan papier et choisit les dimensions.",
-          "Fusion sert à modéliser ; Bambu Studio prépare les instructions ; l’imprimante fabrique la pièce.",
-          "Bambu Studio vérifie automatiquement que toutes les cotes du plan sont justes."
+          "Lancer la fabrication : son apparence à l’écran suffit.",
+          "Vérifier le modèle, préparer la fabrication, puis contrôler la pièce obtenue.",
+          "La rendre plus jolie pour être certain qu’elle fonctionnera."
+        ],
+        "feedback": [
+          "Une image réussie ne prouve pas que la pièce conviendra. Il reste à vérifier ses dimensions, préparer sa fabrication et contrôler le résultat.",
+          "Tu relies le numérique à un usage concret. Cette démarche permet d’explorer des objets adaptés à un besoin, comme un support ou un rangement sur mesure.",
+          "L’apparence et l’utilité sont deux choses différentes. Un objet simple peut répondre au besoin si ses dimensions et son fonctionnement sont adaptés."
         ],
         "preferred": 1,
-        "feedback": [
-          "Le plan doit être interprété et le modèle préparé. L’imprimante ne choisit pas elle-même les dimensions à partir du papier.",
-          "Chaque outil a un rôle distinct : créer la géométrie, préparer l’impression, puis fabriquer. Les contrôles restent nécessaires.",
-          "Le logiciel prépare l’impression ; il ne garantit pas que ton modèle correspond au plan. Il faut comparer les cotes."
-        ],
+        "skills": "Acculturation à la fabrication numérique",
         "type": "knowledge"
       }
     ]
   },
   "3": {
     "title": "J’essaie, j’ajuste, je progresse",
-    "reflection": "Quelle remarque ou quel essai t’a permis de progresser aujourd’hui ?",
+    "reflection": "Quelle remarque ou quel essai t’a permis de progresser ?",
     "questions": [
       {
         "title": "Une remarque sur ton travail",
-        "skills": "Écoute · adaptation",
-        "situation": "Tu pensais avoir terminé. Ton binôme te signale un écart avec la consigne. Tu…",
+        "situation": "Tu pensais avoir terminé. Ton binôme te signale un écart avec la consigne.",
         "options": [
-          "Demandes de te montrer l’écart, le vérifies et essaies une correction.",
-          "Recommences tout pour être certain de ne rien laisser passer.",
-          "Expliques pourquoi tu as fait ainsi, puis conserves ton travail sans vérifier."
+          "Tu lui demandes de montrer l’écart, puis tu vérifies et ajustes si nécessaire.",
+          "Tu recommences tout pour être certain de ne rien laisser passer.",
+          "Tu expliques ton choix et gardes ton travail sans vérifier."
+        ],
+        "feedback": [
+          "Tu utilises sa remarque pour améliorer le résultat. Avant qu’un objet soit utilisé, un regard extérieur peut aider à repérer ce qui t’a échappé.",
+          "Tout refaire peut être inutile. Localiser l’écart permet de choisir une correction adaptée et de conserver ce qui est déjà juste.",
+          "Expliquer ton idée est utile, mais cela ne remplace pas la comparaison avec la demande. Vous pouvez avoir compris différemment le résultat attendu."
         ],
         "preferred": 0,
-        "feedback": [
-          "Tu utilises la remarque pour contrôler et corriger ce qui en a besoin.",
-          "Recommencer peut être nécessaire, mais commence par localiser l’écart.",
-          "Expliquer ton choix est utile. Cela ne remplace pas sa comparaison avec la consigne."
-        ]
+        "skills": "Écoute · adaptation"
       },
       {
         "title": "Tu bloques",
-        "skills": "Autonomie · demande d’aide",
-        "situation": "Après deux essais, tu bloques toujours à la même étape. Tu…",
+        "situation": "Après deux essais, tu bloques toujours à la même étape.",
         "options": [
-          "Demandes au formateur de terminer cette partie à ta place.",
-          "Continues à modifier plusieurs choses pour voir si cela fonctionne.",
-          "Montres ce que tu veux obtenir, ce que tu as essayé et l’endroit où tu bloques."
+          "Tu demandes au formateur de terminer à ta place.",
+          "Tu modifies plusieurs choses en même temps.",
+          "Tu montres ton objectif, tes essais et l’endroit où tu bloques."
+        ],
+        "feedback": [
+          "Tu obtiendras peut-être le résultat, mais tu risques de rester bloqué la prochaine fois. Demander une explication te permettra de reprendre toi-même.",
+          "Tu pourrais obtenir un changement sans savoir ce qui l’a produit. Faire un essai à la fois aide à comprendre et à réutiliser ce que tu découvres.",
+          "Tu donnes les informations nécessaires pour recevoir une aide précise. Cela sert aussi lorsqu’on demande de l’aide à un collègue ou à un service technique."
         ],
         "preferred": 2,
-        "feedback": [
-          "Tu obtiendras peut-être le résultat, mais tu risques de ne pas comprendre comment poursuivre seul.",
-          "Plusieurs changements simultanés rendent leur effet difficile à comprendre.",
-          "Ta demande permet une aide ciblée tout en te laissant acteur de la tâche."
-        ]
+        "skills": "Autonomie · demande d’aide"
       },
       {
         "title": "Le temps se raccourcit",
-        "skills": "Gestion du temps · respect des consignes",
-        "situation": "Il reste peu de temps. Les vérifications obligatoires ne sont pas terminées et tu voudrais encore personnaliser ta pièce. Tu…",
+        "situation": "Les vérifications ne sont pas terminées et tu voudrais encore personnaliser ta pièce.",
         "options": [
-          "Termines la personnalisation, puis vérifies s’il reste du temps.",
-          "Fais les vérifications obligatoires et gardes la personnalisation pour après, si possible.",
-          "Fais rapidement les deux en réduisant chaque vérification."
+          "Tu termines la personnalisation avant de vérifier.",
+          "Tu termines les vérifications, puis personnalises s’il reste du temps.",
+          "Tu fais les deux plus vite en réduisant chaque vérification."
+        ],
+        "feedback": [
+          "Tu risques d’avoir une pièce soignée dont tu ne connais pas la conformité. Quand le temps manque, l’usage attendu doit guider les priorités.",
+          "Tu distingues l’indispensable de l’optionnel. Cette manière de s’organiser aide à livrer un résultat utilisable dans le temps disponible.",
+          "Aller plus vite peut laisser passer un écart. Réduire une option est souvent plus utile que rendre le contrôle incomplet."
         ],
         "preferred": 1,
-        "feedback": [
-          "Tu privilégies une envie au risque de laisser les exigences essentielles sans contrôle.",
-          "Tu hiérarchises les tâches selon ce qui est nécessaire.",
-          "Aller plus vite ne garantit pas que les contrôles restent suffisants."
-        ]
+        "skills": "Gestion du temps · respect des consignes"
       },
       {
         "title": "Le modèle est prêt. Et la pièce ?",
         "skills": "Modélisation numérique · contrôle du tendeur",
-        "situation": "À la fin de la demi-journée 3, le modèle du tendeur est contrôlé et l’impression est lancée. Que peux-tu affirmer ?",
+        "situation": "Le modèle du tendeur a été contrôlé et l’impression est lancée. Que peux-tu affirmer ?",
         "options": [
-          "Le tendeur fonctionne forcément puisque le modèle est affiché en 3D.",
-          "La personnalisation suffit à valider l’usage du tendeur.",
-          "Le modèle a été contrôlé ; il faudra encore mesurer et tester la pièce imprimée lors de la demi-journée 4."
+          "Le tendeur fonctionne puisque son modèle est visible en 3D.",
+          "La personnalisation garantit que le tendeur sera utilisable.",
+          "Il faudra mesurer et tester la pièce quand elle sera terminée."
         ],
         "preferred": 2,
         "feedback": [
-          "L’affichage du modèle ne prouve pas le fonctionnement de la pièce réelle. L’impression et l’usage doivent encore être contrôlés.",
-          "La personnalisation concerne l’apparence. Elle ne remplace pas la vérification des dimensions et de l’usage.",
-          "Tu distingues le contrôle numérique du test réel. Le débriefing de la pièce imprimée aura lieu au début de la demi-journée 4."
+          "Le modèle permet de préparer et de vérifier certaines dimensions. Le fonctionnement doit encore être essayé avec l’objet fabriqué.",
+          "La personnalisation ne prouve pas que l’objet remplit son rôle. Un nom ou une couleur ne remplace pas un essai.",
+          "Tu prévois le passage de l’écran à l’usage réel. Comme pour un objet acheté ou réparé, il faut vérifier qu’il répond effectivement au besoin."
         ],
         "type": "knowledge"
       }
@@ -215,143 +199,110 @@ window.WorkshopQuizzes = {
   },
   "4": {
     "title": "Je teste, puis j’explore l’IA",
-    "reflection": "Qu’as-tu vérifié sur le tendeur imprimé ? Quel contrôle veux-tu garder lorsque tu utilises l’IA ?",
+    "reflection": "Quel point commun vois-tu entre vérifier un objet imprimé et vérifier une réponse de l’IA ?",
     "questions": [
       {
-        "title": "Le tendeur paraît réussi",
-        "skills": "Esprit critique · contrôle",
-        "situation": "Au début de la demi-journée 4, tu récupères le tendeur imprimé. Il paraît réussi. Ton binôme propose de le tester. Tu…",
-        "options": [
-          "Vérifies seulement son apparence.",
-          "Le déclares terminé parce que l’impression est allée jusqu’au bout.",
-          "Compares les dimensions aux valeurs prévues et testes son usage avec ton binôme."
-        ],
-        "preferred": 2,
-        "feedback": [
-          "L’apparence ne suffit pas à confirmer les dimensions et le fonctionnement.",
-          "Une impression terminée n’est pas forcément une pièce conforme. Le contrôle reste à faire.",
-          "Vous confrontez le résultat réel aux attentes et pouvez expliquer les écarts éventuels."
-        ]
-      },
-      {
         "title": "Des informations pour essayer",
-        "skills": "Responsabilité · protection des données",
-        "situation": "Pour tester ton appli, tu disposes d’une vraie fiche client avec son nom, son adresse et son téléphone. Tu…",
+        "situation": "Pour tester ton application, tu disposes d’une fiche client avec un nom, une adresse et un numéro de téléphone.",
         "options": [
-          "Crées un exemple fictif avec uniquement les informations utiles au test.",
-          "Supprimes le nom et gardes les autres coordonnées.",
-          "Utilises la fiche complète, puisque le test reste dans l’atelier."
+          "Tu crées un exemple fictif avec les seules informations utiles au test.",
+          "Tu supprimes seulement le nom.",
+          "Tu utilises la fiche complète puisque c’est un exercice."
+        ],
+        "feedback": [
+          "Tu peux essayer l’application sans transmettre les coordonnées d’une personne. Pour une démonstration, des données inventées permettent de reproduire la situation.",
+          "L’adresse et le téléphone peuvent encore identifier la personne. Pour cet essai, remplace aussi ces informations par des données fictives.",
+          "Le fait de s’exercer ne rend pas ces informations nécessaires. Demande-toi quelles données sont réellement utiles avant de les saisir dans un outil."
         ],
         "preferred": 0,
-        "feedback": [
-          "Tu peux tester le fonctionnement sans transmettre les coordonnées du client.",
-          "Une adresse ou un téléphone peuvent encore permettre d’identifier la personne.",
-          "Le contexte de l’atelier ne suffit pas à justifier le partage de ces informations avec l’outil."
-        ]
+        "skills": "Responsabilité · protection des données"
       },
       {
         "title": "Un désaccord avec ton binôme",
-        "skills": "Communication · coopération",
-        "situation": "Ton binôme veut une appli très complète. Tu préfères une version simple que vous pourrez tester dans le temps disponible. Tu…",
+        "situation": "Ton binôme veut une application très complète. Tu préfères une version simple que vous pourrez terminer et tester.",
         "options": [
-          "Commences ta version de ton côté pour ne pas perdre de temps.",
-          "Proposes de définir ensemble une fonction indispensable, puis d’ajouter le reste si elle fonctionne.",
-          "Demandes à l’IA de choisir qui a raison."
+          "Tu commences ta propre version sans en discuter.",
+          "Vous choisissez une fonction indispensable, puis ajoutez des options si elle fonctionne.",
+          "Vous demandez à l’IA de décider qui a raison."
+        ],
+        "feedback": [
+          "Vous risquez de travailler dans deux directions. Un court échange peut vous permettre de choisir un résultat réalisable ensemble.",
+          "Vous vous accordez sur une première étape vérifiable. Cette méthode aide à avancer dans un projet sans vouloir tout résoudre immédiatement.",
+          "L’IA peut proposer des pistes, mais vous connaissez votre besoin et votre temps disponible. La décision doit tenir compte de votre situation."
         ],
         "preferred": 1,
-        "feedback": [
-          "Tu avances, mais vous risquez de travailler dans deux directions différentes.",
-          "Vous vous accordez sur une priorité et un résultat vérifiable.",
-          "L’IA peut suggérer des options. Le choix doit tenir compte de votre besoin et de vos contraintes."
-        ]
+        "skills": "Communication · coopération"
       },
       {
         "title": "Quel rôle garder face à l’IA ?",
-        "skills": "Acculturation à l’IA · esprit critique",
-        "situation": "L’IA génère une application à partir de ta demande. Qui doit vérifier qu’elle répond au besoin et que ses résultats sont corrects ?",
+        "situation": "L’IA produit une application qui semble fonctionner. Qui doit vérifier ses résultats ?",
         "options": [
-          "L’IA seule, puisqu’elle a produit le code.",
-          "Le binôme, avec l’aide du formateur, en comparant à des consignes et à des résultats connus.",
+          "L’IA seule, puisqu’elle a créé l’application.",
+          "Votre binôme, avec l’aide du formateur si nécessaire.",
           "Personne, si les boutons fonctionnent et que la présentation est claire."
         ],
-        "preferred": 1,
         "feedback": [
-          "Produire le code ne garantit pas sa justesse. L’IA peut se tromper ou mal interpréter la demande.",
-          "Vous gardez la responsabilité du contrôle : besoin, consignes, données, calculs et essais. L’IA vous aide à produire et à corriger.",
-          "Une interface utilisable peut afficher un résultat faux. Il faut aussi tester ce que l’application calcule ou permet de faire."
+          "L’outil peut se tromper ou mal interpréter une demande. Lui demander une vérification peut aider, mais il faut aussi comparer avec un résultat connu.",
+          "Vous gardez la responsabilité du contrôle. Pour un calcul, une liste ou une consigne, cherchez un exemple dont vous pouvez vérifier vous-mêmes le résultat.",
+          "Une application agréable peut donner un résultat faux. Avant de l’utiliser pour décider ou préparer une tâche, vérifiez ce qu’elle produit."
         ],
+        "preferred": 1,
+        "skills": "Acculturation à l’IA · esprit critique",
         "type": "knowledge"
       }
     ]
   },
   "5": {
     "title": "Je montre ce que j’ai appris",
-    "reflection": "Quelle découverte numérique et quelle méthode de vérification veux-tu réutiliser en formation de maçon ? Donne un exemple.",
+    "reflection": "Quelle découverte te donne envie d’aller plus loin ? Donne un exemple de situation où tu pourrais la réutiliser.",
     "questions": [
       {
         "title": "Un test qui surprend",
-        "skills": "Écoute · retour constructif",
-        "situation": "Un autre binôme ne comprend pas comment utiliser votre appli. Chez vous, tout semblait clair. Tu…",
+        "situation": "Un autre binôme ne comprend pas comment utiliser votre application. Pour vous, tout semblait clair.",
         "options": [
-          "Lui expliques chaque clic pour qu’il termine le test.",
-          "Lui montres rapidement le résultat attendu et passes au bilan.",
-          "Lui demandes de montrer où il bloque, observes, puis testes une amélioration avec lui."
+          "Tu lui expliques chaque clic pour qu’il termine le test.",
+          "Tu montres rapidement le résultat attendu.",
+          "Tu lui demandes de montrer où il bloque, puis vous testez une amélioration."
+        ],
+        "feedback": [
+          "Tu l’aides à avancer, mais tu ne sais pas encore s’il pourrait utiliser l’application seul. Observe d’abord ce qui lui manque.",
+          "Montrer le résultat ne révèle pas ce qui rend l’utilisation difficile. Une consigne ou un bouton peut avoir besoin d’être clarifié.",
+          "Vous utilisez son retour pour rendre l’application plus compréhensible. La même démarche peut améliorer une notice, une explication ou une organisation de travail."
         ],
         "preferred": 2,
-        "feedback": [
-          "Tu aides à terminer, mais tu ne sauras pas si l’appli peut être comprise sans toi.",
-          "Montrer le résultat ne permet pas de comprendre la difficulté rencontrée.",
-          "Tu transformes le retour en une amélioration que vous pouvez vérifier."
-        ]
+        "skills": "Écoute · retour constructif"
       },
       {
         "title": "« Ça fonctionne »",
-        "skills": "Contrôle · argumentation",
-        "situation": "Tu présentes ta réalisation. Le formateur te demande : « Comment sais-tu qu’elle fonctionne ? » Tu…",
+        "situation": "Le formateur te demande : « Comment sais-tu que ton application fonctionne ? »",
         "options": [
-          "Expliques le test effectué, le résultat attendu et ce que tu as obtenu.",
-          "Dis que ton binôme et toi êtes satisfaits du résultat.",
-          "Montres qu’elle ressemble à l’exemple de départ."
+          "Tu expliques ton test, le résultat attendu et le résultat obtenu.",
+          "Tu dis que ton binôme et toi êtes satisfaits.",
+          "Tu montres qu’elle ressemble à l’exemple présenté."
+        ],
+        "feedback": [
+          "Tu apportes une preuve que les autres peuvent comprendre. Dire ce que tu as vérifié aide aussi à expliquer un travail ou une correction.",
+          "Votre satisfaction compte, mais elle ne décrit pas le contrôle réalisé. Ajoute un exemple précis de ce que vous avez testé.",
+          "La ressemblance ne garantit pas le fonctionnement. Deux applications semblables peuvent produire des résultats différents."
         ],
         "preferred": 0,
-        "feedback": [
-          "Tu appuies ta conclusion sur une vérification que les autres peuvent comprendre.",
-          "Votre satisfaction compte, mais elle ne décrit pas le contrôle réalisé.",
-          "La ressemblance ne suffit pas à vérifier l’usage attendu."
-        ]
+        "skills": "Contrôle · argumentation"
       },
       {
-        "title": "Ce que tu emportes",
-        "skills": "Prise de recul · transfert",
-        "situation": "Pour ton bilan, quelle réponse montre le mieux ce que tu peux réutiliser ?",
+        "title": "Ouvrir le champ des possibles",
+        "situation": "Quelle conclusion montre le mieux ce que tu pourrais réutiliser après l’atelier ?",
         "options": [
-          "« J’ai découvert plusieurs outils numériques. »",
-          "« Quand deux résultats diffèrent, je compare les méthodes avant de choisir. Je pourrai le refaire lors d’un contrôle de mesure. »",
-          "« J’ai terminé toutes les activités. »"
+          "« Maintenant, je peux fabriquer n’importe quel objet sans aide. »",
+          "« Je peux imaginer un objet adapté à un besoin, chercher comment le réaliser et prévoir comment le tester. »",
+          "« Ces outils servent uniquement à refaire l’exercice de l’atelier. »"
+        ],
+        "feedback": [
+          "L’atelier t’a permis de découvrir des possibilités. Un nouveau projet demandera encore de préciser le besoin, les contraintes et les vérifications.",
+          "Tu relies une idée à une démarche concrète. Cela pourrait concerner un rangement, un support ou un accessoire, au quotidien ou dans une future activité professionnelle.",
+          "L’exercice est un point de départ. Tu peux maintenant regarder d’autres situations et te demander si une fabrication ou une application pourrait être utile."
         ],
         "preferred": 1,
-        "feedback": [
-          "Tu cites une découverte. Ajoute un exemple de ce que tu sais mieux faire.",
-          "Tu nommes une méthode et une situation où tu pourrais la réutiliser.",
-          "Tu cites un résultat. Explique aussi comment tu as travaillé pour l’obtenir."
-        ]
-      },
-      {
-        "title": "Comprendre la règle de trois",
-        "skills": "Proportionnalité · vérification d’un calcul numérique",
-        "situation": "Dans un exercice simplifié, 4 m² de mur nécessitent 50 blocs. Avec les mêmes blocs et la même pose, sans ouvertures ni réserve, combien en faut-il pour 10 m² ?",
-        "options": [
-          "125 blocs : 50 ÷ 4 × 10.",
-          "56 blocs : 50 + (10 − 4).",
-          "200 blocs : 50 × 4."
-        ],
-        "preferred": 0,
-        "feedback": [
-          "On cherche d’abord la quantité pour 1 m² : 50 ÷ 4 = 12,5. Puis pour 10 m² : 12,5 × 10 = 125 blocs. La proportion est conservée.",
-          "Ajouter la différence de surface au nombre de blocs mélange deux unités. Il faut multiplier par le rapport des surfaces : 10 ÷ 4.",
-          "Multiplier par 4 ne correspond pas au passage de 4 m² à 10 m². Le calcul est 50 × 10 ÷ 4 = 125 blocs."
-        ],
-        "type": "knowledge"
+        "skills": "Prise de recul · ouverture des possibles"
       }
     ]
   }
