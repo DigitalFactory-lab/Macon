@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#00102a">
+  <title>Cherche l’intrus — Déclic Chantier</title>
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="intrus.css">
+  <link rel="stylesheet" href="menu-return.css">
+  <script src="intrus-data.js" defer></script><script src="intrus.js" defer></script>
+</head>
+<body class="intrus-page">
+  <a class="skip" href="#jeu">Aller au jeu</a>
+  <header class="header"><a href="index.html" class="brand"><span>DÉCLIC CHANTIER<span class="brand-small">UN ATELIER DIGITAL FACTORY</span></span></a><a href="index.html#atelier-menu" class="text-link">Retour à l’atelier</a></header>
+  <main class="intrus-wrap" id="jeu">
+    <div class="intrus-intro"><div><p class="eyebrow">LA PAUSE DÉFI / OBSERVER ENSEMBLE</p><h1>CHERCHE <span>L’INTRUS.</span></h1><p>Compare le plan et la maison. Place une croix sur chaque différence repérée. Quand vous pensez avoir fini, faites sonner le buzzer !</p></div><span class="intrus-stamp" aria-hidden="true">OUVRE<br>L’ŒIL.</span></div>
+    <nav class="intrus-tabs" aria-label="Choisir une maison"><button type="button" data-case="0" aria-pressed="true">Maison 01</button><button type="button" data-case="1" aria-pressed="false">Maison 02</button><button type="button" data-case="2" aria-pressed="false">Maison 03</button></nav>
+    <p class="intrus-help">Clique sur la photo pour ajouter une croix, puis fais-la glisser pour l’ajuster. Au clavier : « Ajouter une croix », puis les flèches pour la déplacer ; Suppr pour l’enlever.</p>
+    <div class="intrus-pair">
+      <section class="intrus-card"><div class="intrus-card-head"><h2>01 / Le plan</h2><label>Zoom <select id="plan-zoom"><option value="1">100 %</option><option value="1.5">150 %</option><option value="2">200 %</option><option value="3">300 %</option></select></label></div><div class="intrus-viewport"><img id="intrus-plan" alt="Plan de la maison à comparer à la photo" draggable="false"></div><a id="plan-large" target="_blank" rel="noopener" class="text-link">Ouvrir le plan en grand ↗</a></section>
+      <section class="intrus-card"><div class="intrus-card-head"><h2>02 / Ta recherche</h2><label>Zoom <select id="photo-zoom"><option value="1">100 %</option><option value="1.5">150 %</option><option value="2">200 %</option></select></label></div><div class="intrus-viewport" id="photo-viewport"><div class="intrus-photo" id="photo-stage"><img id="intrus-photo" alt="Maison modifiée : repère les différences avec le plan" draggable="false"><div id="intrus-marks"></div></div><p id="photo-pending" hidden>La photo de cet exercice est en cours de préparation.</p></div><div class="intrus-tools"><button type="button" id="add-mark">＋ Ajouter une croix</button><button type="button" id="undo-mark">Annuler</button><button type="button" id="clear-marks">Recommencer cette maison</button></div><p class="intrus-count" id="mark-count">0 croix placée</p></section>
+    </div>
+    <section class="intrus-finish" aria-label="Terminer la recherche"><div><p class="micro">VOUS PENSEZ AVOIR TOUT REPÉRÉ ?</p><p>Vérifiez ensemble, puis signalez que vous avez terminé.</p><p id="intrus-status" role="status" aria-live="polite"></p><button type="button" id="resume-game" hidden>Reprendre la recherche</button></div><button type="button" class="intrus-buzzer" id="intrus-buzzer" disabled><span aria-hidden="true">●</span> ON A FINI !<small>Faire sonner le buzzer</small></button></section>
+    <details class="intrus-correction" id="intrus-correction" hidden><summary>Voir le corrigé avec le formateur</summary><p>Comparez vos croix à ce corrigé. Montrez sur le plan ce qui justifie chaque différence.</p><img id="intrus-result" alt="Corrigé fourni par le formateur : différences repérées par des croix rouges"><a id="result-large" target="_blank" rel="noopener" class="text-link">Ouvrir le corrigé en grand ↗</a></details>
+    <p class="intrus-note">Le buzzer signale la fin de votre recherche. Expliquez vos observations au formateur pour les vérifier ensemble.</p>
+    <noscript>Active JavaScript pour placer les croix et utiliser le buzzer.</noscript>
+  </main>
+  <a class="menu-return" href="index.html#atelier-menu" aria-label="Retour au menu de l’atelier"><span>MENU</span></a>
+</body>
+</html>
