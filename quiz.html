@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#00102a">
+  <title>Et toi, tu ferais comment ? — Déclic Chantier</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="quiz.css">
+  <link rel="stylesheet" href="menu-return.css">
+  <script src="quiz-data.js" defer></script>
+  <script src="quiz.js" defer></script>
+</head>
+<body class="quiz-page">
+  <a class="skip" href="#quiz-content">Aller au quiz</a>
+  <header class="header">
+    <a href="index.html" class="brand"><span>DÉCLIC CHANTIER<span class="brand-small">UN ATELIER DIGITAL FACTORY</span></span></a>
+    <a href="index.html#atelier-menu" class="text-link" data-quiz-return>Retour à la séance</a>
+  </header>
+  <main class="quiz-wrap">
+    <div class="quiz-intro">
+      <p class="eyebrow" id="quiz-session-label">LE POINT SUR TES RÉFLEXES</p>
+      <h1>ET TOI, TU FERAIS<br><span>COMMENT ?</span></h1>
+      <p id="quiz-session-title"></p>
+      <p class="quiz-instruction">Trois situations pour réfléchir à ta façon de travailler. Choisis une réaction, puis découvre ce qu’elle permet et ce qu’elle laisse à vérifier.</p>
+    </div>
+    <div id="quiz-content"><noscript>Active JavaScript pour répondre aux trois situations du quiz. <a href="index.html#atelier-menu">Revenir à l’atelier</a>.</noscript></div>
+    <p class="quiz-footnote">Un temps d’échange, sans note. Appuie tes réponses sur ce que tu as vécu pendant l’atelier.</p>
+    <footer class="quiz-footer"><img src="assets/logo-digital-factory.png" alt="Digital Factory by Forem" width="813" height="187"><a href="index.html#atelier-menu" class="text-link" data-quiz-return>Retour à la séance</a></footer>
+  </main>
+  <a class="menu-return" href="index.html#atelier-menu" data-quiz-menu aria-label="Revenir au menu des demi-journées"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></svg><span>MENU</span></a>
+</body>
+</html>
