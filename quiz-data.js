@@ -2,57 +2,85 @@
 window.WorkshopQuizzes = {
   "1": {
     "title": "À deux, on voit plus juste",
-    "reflection": "À quel moment ton binôme t’a-t-il aidé à comprendre ou à vérifier ?",
+    "instruction": "Chaque question part de ce que tu as fait aujourd’hui en atelier. À toi de voir à quoi ça te servira sur un vrai chantier.",
+    "reflections": [
+      "Cite une chose faite aujourd’hui que tu referas sur un vrai chantier.",
+      "En entretien d’embauche, un patron te demande ce que tu fais quand tu trouves une erreur sur un plan. Que lui réponds-tu ?"
+    ],
     "questions": [
       {
         "title": "Deux mesures différentes",
-        "situation": "Ton binôme et toi trouvez deux mesures différentes pour la même pièce. Que proposes-tu ?",
+        "workshop": "Ton binôme et toi avez mesuré la même pièce et comparé vos résultats.",
+        "situation": "Avant de monter une cloison, un ancien trouve 2,45 m pour la largeur de la pièce, toi 2,54 m. Que fais-tu ?",
         "options": [
-          "Garder la mesure de la personne la plus expérimentée.",
-          "Reprendre ensemble la mesure en comparant les points de départ et les unités.",
-          "Faire la moyenne des deux mesures."
+          "Tu gardes sa mesure, il a l’expérience.",
+          "Vous prenez 2,50 m, entre les deux.",
+          "Vous remesurez ensemble."
         ],
+        "preferred": 2,
         "feedback": [
-          "L’expérience aide, mais une erreur reste possible. Même avec un collègue expérimenté, comparer la manière de mesurer permet de comprendre l’écart.",
-          "Vous cherchez l’origine de l’écart avant de décider. Cette habitude peut éviter de couper une pièce trop courte ou de commander une mauvaise dimension.",
-          "La moyenne donne un nouveau nombre sans expliquer la différence. Avant de fabriquer ou d’acheter quelque chose, mieux vaut retrouver la mesure juste."
+          "Comme en atelier, on cherche d’où vient l’écart avant d’aller plus loin. Avec 9 cm d’erreur, la cloison serait montée au mauvais endroit.",
+          "Comme en atelier, on cherche d’où vient l’écart avant d’aller plus loin. Avec 9 cm d’erreur, la cloison serait montée au mauvais endroit.",
+          "Comme en atelier, on cherche d’où vient l’écart avant d’aller plus loin. Avec 9 cm d’erreur, la cloison serait montée au mauvais endroit."
         ],
-        "preferred": 1,
         "skills": "Rigueur · coopération"
       },
       {
-        "title": "Une consigne pas très claire",
-        "situation": "Tu comprends le résultat attendu, mais une étape de la consigne reste floue. Que fais-tu ?",
+        "title": "Une consigne floue",
+        "workshop": "Quand une étape n’était pas claire, tu pouvais demander une précision avant de te lancer.",
+        "situation": "Le chef s’en va en te lançant « Tu fais la cloison de la salle de bain », sans dire de quel côté va la porte. Que fais-tu ?",
         "options": [
-          "Expliquer ce que tu as compris et demander une précision.",
-          "Commencer comme tu le penses et demander à la fin.",
-          "Copier ce que fait le binôme voisin."
-        ],
-        "feedback": [
-          "Tu poses une question précise pour pouvoir avancer. Dans une activité nouvelle, clarifier une consigne peut éviter de devoir tout recommencer.",
-          "Tu avances, mais tu risques de découvrir trop tard une mauvaise interprétation. Une vérification au départ peut faire gagner du temps.",
-          "Observer peut aider, mais le voisin peut aussi se tromper. Tu dois pouvoir expliquer ce que tu fais et pourquoi."
+          "Tu l’appelles pour vérifier.",
+          "Tu choisis le côté le plus logique.",
+          "Tu attends son retour."
         ],
         "preferred": 0,
-        "skills": "Respect des consignes · communication"
+        "feedback": [
+          "Comme en atelier, une question posée au départ évite de tout refaire. Avec une porte du mauvais côté, il faudrait démolir une partie de la cloison.",
+          "Comme en atelier, une question posée au départ évite de tout refaire. Avec une porte du mauvais côté, il faudrait démolir une partie de la cloison.",
+          "Comme en atelier, une question posée au départ évite de tout refaire. Avec une porte du mauvais côté, il faudrait démolir une partie de la cloison."
+        ],
+        "skills": "Communication · respect des consignes"
       },
       {
-        "title": "Peut-on se fier au plan ?",
-        "situation": "Un plan indique trois parties de 1 100 mm, 1 500 mm et 1 100 mm. Le total annoncé est de 3 600 mm. Que constates-tu ?",
+        "title": "Un doute sur le mur",
+        "workshop": "Chacun avançait de son côté, et vous réfléchissiez à deux quand il le fallait.",
+        "situation": "Tu montes un pan de mur de ton côté. Au troisième rang, ton niveau montre qu’il penche légèrement. Que fais-tu ?",
         "options": [
-          "La somme donne 3 700 mm : il faut clarifier l’écart.",
-          "Le total écrit suffit : inutile de refaire le calcul.",
-          "Il faut modifier une des trois dimensions pour obtenir 3 600 mm."
+          "Tu continues, ça se rattrapera plus haut.",
+          "Tu demandes à l’ancien de jeter un œil.",
+          "Tu défais tout pour recommencer."
         ],
+        "preferred": 1,
         "feedback": [
-          "Tu as repéré 100 mm de différence. Avant de fabriquer à partir d’un plan, comparer les indications permet d’éviter de reproduire une erreur.",
-          "Une information écrite peut contenir une erreur. Un plan sert de référence, mais ses indications doivent aussi être comprises et vérifiées.",
-          "Tu ne sais pas quelle indication est à corriger. Dans une situation réelle, mieux vaut demander une clarification que choisir une dimension au hasard."
+          "Comme en atelier, tu avances de ton côté et tu réfléchis à deux dès qu’un doute apparaît. Un mur qui penche s’écarte un peu plus à chaque rang, donc plus tôt on le voit, plus c’est simple à corriger.",
+          "Comme en atelier, tu avances de ton côté et tu réfléchis à deux dès qu’un doute apparaît. Un mur qui penche s’écarte un peu plus à chaque rang, donc plus tôt on le voit, plus c’est simple à corriger.",
+          "Comme en atelier, tu avances de ton côté et tu réfléchis à deux dès qu’un doute apparaît. Un mur qui penche s’écarte un peu plus à chaque rang, donc plus tôt on le voit, plus c’est simple à corriger."
         ],
-        "preferred": 0,
-        "skills": "Lecture de plan · contrôle des données",
-        "type": "knowledge"
+        "skills": "Autonomie · demande d’aide"
+      },
+      {
+        "title": "Lire un plan",
+        "workshop": "Tu as travaillé avec des cotes précises, au millimètre.",
+        "situation": "Le plan d’une façade indique 1,10 m de mur, une baie de 1,50 m, puis 1,10 m de mur. Total annoncé : 3,60 m. Le chef veut attaquer. Que fais-tu ?",
+        "options": [
+          "Tu commences, c’est lui le responsable.",
+          "Tu raccourcis chaque mur de 5 cm.",
+          "Tu lui montres l’écart d’abord."
+        ],
+        "preferred": 2,
+        "feedback": [
+          "Additionnées, les cotes font 3,70 m. Comme en atelier, on vérifie les mesures avant de fabriquer : deux minutes de discussion peuvent éviter de démolir un mur.",
+          "Additionnées, les cotes font 3,70 m. Comme en atelier, on vérifie les mesures avant de fabriquer : deux minutes de discussion peuvent éviter de démolir un mur.",
+          "Additionnées, les cotes font 3,70 m. Comme en atelier, on vérifie les mesures avant de fabriquer : deux minutes de discussion peuvent éviter de démolir un mur."
+        ],
+        "skills": "Lecture de plan · contrôle"
       }
+    ],
+    "reflection": "Cite une chose faite aujourd’hui que tu referas sur un vrai chantier. En entretien d’embauche, un patron te demande ce que tu fais quand tu trouves une erreur sur un plan. Que lui réponds-tu ?",
+    "animation": [
+      "Compter environ 5 minutes pour le quiz, autant pour le recul.",
+      "Faire relire les situations de chantier par un formateur maçon (vocabulaire, réalisme)."
     ]
   },
   "2": {
