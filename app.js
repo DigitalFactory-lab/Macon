@@ -45,10 +45,6 @@ function selectSession(n,{scroll=false,focus=false}={}){
   document.getElementById('session-resource').innerHTML=resourceTemplates[session.resource];
   document.querySelectorAll('[data-trainer-only]').forEach(el=>el.hidden=!trainerMode);
   document.getElementById('next-session').textContent=n===5?'Revenir à la séance 01':`Voir la séance ${String(n+1).padStart(2,'0')}`;
-  document.getElementById('session-quiz-label').textContent=`FIN DE DEMI-JOURNÉE ${String(n).padStart(2,'0')} / MINI-QUIZ`;
-  const quizLink=document.getElementById('session-quiz-link');
-  quizLink.href=`quiz.html?session=${n}`;
-  quizLink.setAttribute('aria-label',`Ouvrir le quiz de la demi-journée ${String(n).padStart(2,'0')}`);
   const activeTab=tabs.find(tab=>Number(tab.dataset.session)===n);
   if(activeTab){const menu=activeTab.parentNode;if(menu.scrollWidth>menu.clientWidth){const left=activeTab.offsetLeft-(menu.clientWidth-activeTab.clientWidth)/2;menu.scrollTo({left,behavior:'instant'});}}
   if(scroll)document.getElementById('parcours').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
