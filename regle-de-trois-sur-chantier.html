@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La règle de trois sur chantier</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="atelier-ia.css"><link rel="stylesheet" href="regle-de-trois.css"><link rel="stylesheet" href="menu-return.css"><script src="regle-de-trois.js" defer></script><script src="menu-return.js" defer></script>
+</head>
+<body class="guide-page rule-page">
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="header"><a href="index.html?session=4#parcours" class="brand"><span>DÉCLIC CHANTIER<span class="brand-small">UN ATELIER DIGITAL FACTORY</span></span></a><a class="text-link" href="index.html?session=4#parcours">← Retour à la séance IA</a></header>
+<main class="guide-wrap rule-wrap" id="main">
+<p class="eyebrow">AVANT DE CRÉER TON APPLI · COMPRENDRE LE CALCUL</p>
+
+<h1>La règle de trois sur chantier</h1>
+<p class="rule-intro">Place les éléments du calcul, cherche les résultats, puis vérifie ta démarche.</p>
+<p class="rule-note">Les quantités proposées sont des données d’exercice. On suppose les mêmes matériaux et les mêmes conditions pour comparer.</p>
+
+<h2>Le principe</h2>
+<p>La règle de trois sert à trouver un nombre quand tu en connais déjà trois.</p>
+<p>Elle marche quand chaque m², chaque sac ou chaque heure demande toujours la même quantité. Par exemple, chaque m² de mur demande le même nombre de blocs.</p>
+
+<h3>La méthode « Pour 1 »</h3>
+<p>Exemple : pour 4 m² de mur, il a fallu 50 blocs. Combien de blocs pour 10 m² ? Les trois nombres connus sont 4, 50 et 10.</p>
+<p class="drag-instruction">Glisse chaque nombre et chaque signe dans les cases, puis écris le résultat. Tu peux aussi cliquer sur un élément, puis sur une case. Au clavier : utilise Tab et Entrée.</p><section class="calculation" data-calc="pour-un" data-expected="12.5" data-orders="50|÷|4">
+<h4>1. Je cherche pour 1 m²</h4><div class="token-bank" aria-label="Éléments à placer pour 1. Je cherche pour 1 m²"><button type="button" class="calc-token" draggable="true" id="pour-un-token-0" data-value="4" aria-pressed="false">4</button><button type="button" class="calc-token" draggable="true" id="pour-un-token-1" data-value="50" aria-pressed="false">50</button><button type="button" class="calc-token" draggable="true" id="pour-un-token-2" data-value="÷" aria-pressed="false">÷</button></div>
+<div class="equation" aria-label="Calcul à compléter"><div class="calc-slot" role="button" tabindex="0" aria-label="1. Je cherche pour 1 m², emplacement 1" data-empty="1"></div><div class="calc-slot" role="button" tabindex="0" aria-label="1. Je cherche pour 1 m², emplacement 2" data-empty="2"></div><div class="calc-slot" role="button" tabindex="0" aria-label="1. Je cherche pour 1 m², emplacement 3" data-empty="3"></div><span aria-hidden="true">=</span><label class="calc-result"><span class="sr-label">Résultat : 1. Je cherche pour 1 m²</span><input type="text" inputmode="decimal" autocomplete="off" aria-label="Résultat : 1. Je cherche pour 1 m²" placeholder="?"> <span>blocs par m²</span></label></div>
+<div class="calc-actions"><button class="button primary" type="button" data-check-calc>Vérifier ce calcul</button><button class="text-link" type="button" data-reset-calc>Recommencer</button></div><p class="calc-feedback" aria-live="polite"></p></section><section class="calculation" data-calc="pour-dix" data-expected="125" data-orders="12,5|×|10;10|×|12,5">
+<h4>2. Je calcule pour 10 m²</h4><div class="token-bank" aria-label="Éléments à placer pour 2. Je calcule pour 10 m²"><button type="button" class="calc-token" draggable="true" id="pour-dix-token-0" data-value="10" aria-pressed="false">10</button><button type="button" class="calc-token" draggable="true" id="pour-dix-token-1" data-value="×" aria-pressed="false">×</button><button type="button" class="calc-token" draggable="true" id="pour-dix-token-2" data-value="12,5" aria-pressed="false">12,5</button></div>
+<div class="equation" aria-label="Calcul à compléter"><div class="calc-slot" role="button" tabindex="0" aria-label="2. Je calcule pour 10 m², emplacement 1" data-empty="1"></div><div class="calc-slot" role="button" tabindex="0" aria-label="2. Je calcule pour 10 m², emplacement 2" data-empty="2"></div><div class="calc-slot" role="button" tabindex="0" aria-label="2. Je calcule pour 10 m², emplacement 3" data-empty="3"></div><span aria-hidden="true">=</span><label class="calc-result"><span class="sr-label">Résultat : 2. Je calcule pour 10 m²</span><input type="text" inputmode="decimal" autocomplete="off" aria-label="Résultat : 2. Je calcule pour 10 m²" placeholder="?"> <span>blocs</span></label></div>
+<div class="calc-actions"><button class="button primary" type="button" data-check-calc>Vérifier ce calcul</button><button class="text-link" type="button" data-reset-calc>Recommencer</button></div><p class="calc-feedback" aria-live="polite"></p></section><h3>Le raccourci (produit en croix)</h3><p>Place 50 et 10 de chaque côté du signe ×, puis divise par 4. Retrouves-tu le même résultat ?</p><section class="calculation" data-calc="raccourci" data-expected="125" data-orders="50|×|10|÷|4;10|×|50|÷|4">
+<h4>3. Tout le calcul en une ligne</h4><div class="token-bank" aria-label="Éléments à placer pour 3. Tout le calcul en une ligne"><button type="button" class="calc-token" draggable="true" id="raccourci-token-0" data-value="4" aria-pressed="false">4</button><button type="button" class="calc-token" draggable="true" id="raccourci-token-1" data-value="×" aria-pressed="false">×</button><button type="button" class="calc-token" draggable="true" id="raccourci-token-2" data-value="50" aria-pressed="false">50</button><button type="button" class="calc-token" draggable="true" id="raccourci-token-3" data-value="÷" aria-pressed="false">÷</button><button type="button" class="calc-token" draggable="true" id="raccourci-token-4" data-value="10" aria-pressed="false">10</button></div>
+<div class="equation" aria-label="Calcul à compléter"><div class="calc-slot" role="button" tabindex="0" aria-label="3. Tout le calcul en une ligne, emplacement 1" data-empty="1"></div><div class="calc-slot" role="button" tabindex="0" aria-label="3. Tout le calcul en une ligne, emplacement 2" data-empty="2"></div><div class="calc-slot" role="button" tabindex="0" aria-label="3. Tout le calcul en une ligne, emplacement 3" data-empty="3"></div><div class="calc-slot" role="button" tabindex="0" aria-label="3. Tout le calcul en une ligne, emplacement 4" data-empty="4"></div><div class="calc-slot" role="button" tabindex="0" aria-label="3. Tout le calcul en une ligne, emplacement 5" data-empty="5"></div><span aria-hidden="true">=</span><label class="calc-result"><span class="sr-label">Résultat : 3. Tout le calcul en une ligne</span><input type="text" inputmode="decimal" autocomplete="off" aria-label="Résultat : 3. Tout le calcul en une ligne" placeholder="?"> <span>blocs</span></label></div>
+<div class="calc-actions"><button class="button primary" type="button" data-check-calc>Vérifier ce calcul</button><button class="text-link" type="button" data-reset-calc>Recommencer</button></div><p class="calc-feedback" aria-live="polite"></p></section><h3>Avant de valider</h3>
+<ul>
+  <li><strong>Le bon sens.</strong> Plus de m², plus de blocs. Si ton résultat baisse alors que le mur grandit, cherche l'erreur.</li>
+  <li><strong>L'unité.</strong> Écris-la toujours à côté du nombre : 12,5 blocs, 18 seaux, 4 m².</li>
+  <li><strong>L'arrondi.</strong> Pour le matériel, on arrondit au-dessus : 4,2 sacs, tu en achètes 5.</li>
+  <li><strong>La calculatrice.</strong> Elle est permise, comme le GSM sur chantier.</li>
+</ul>
+
+<h2>Exercices</h2>
+<p>Chaque exercice suit le même schéma : a) tu cherches combien pour 1 ; b) tu calcules ce qu'on te demande ; c) tu fais le chemin inverse, en partant du résultat.</p>
+
+<h3>1. La gâchée</h3>
+<p>Pour 3 sacs de ciment, tu mets 27 seaux de sable.</p>
+<p><strong>a)</strong> Combien de seaux de sable pour 1 sac ?</p>
+<p><strong>b)</strong> Combien de seaux de sable pour 5 sacs ?</p>
+<p><strong>c)</strong> Il reste 63 seaux de sable au tas. Combien de sacs de ciment faut-il pour utiliser tout ce sable ?</p>
+<div class="table-wrap"><table>
+  <tr><th>Sacs de ciment</th><th>Seaux de sable</th></tr>
+  <tr><td>3</td><td>27</td></tr>
+  <tr><td>1</td><td>…</td></tr>
+  <tr><td>5</td><td>…</td></tr>
+  <tr><td>…</td><td>63</td></tr>
+</table></div>
+<form class="exercise-form" data-exercise="1"><fieldset><legend>Tes résultats — exercice 1</legend><div class="answer-grid"><label for="ex-1-0">a) seaux<input id="ex-1-0" name="answer-0" type="text" inputmode="decimal" autocomplete="off" data-answer="9" data-hint="27 ÷ 3" placeholder="Ton résultat"><span class="field-feedback" aria-live="polite"></span></label><label for="ex-1-1">b) seaux<input id="ex-1-1" name="answer-1" type="text" inputmode="decimal" autocomplete="off" data-answer="45" data-hint="9 × 5" placeholder="Ton résultat"><span class="field-feedback" aria-live="polite"></span></label><label for="ex-1-2">c) sacs<input id="ex-1-2" name="answer-2" type="text" inputmode="decimal" autocomplete="off" data-answer="7" data-hint="63 ÷ 9" placeholder="Ton résultat"><span class="field-feedback" aria-live="polite"></span></label></div><button class="button primary" type="submit">Vérifier mes réponses</button><p class="exercise-feedback" aria-live="polite"></p></fieldset></form>
+
+<h3>2. Les crochets</h3>
+<p>Pour 6 m² de mur creux, il faut 30 crochets pour relier le parement au mur intérieur.</p>
+<p><strong>a)</strong> Combien de crochets pour 1 m² ?</p>
+<p><strong>b)</strong> Combien de crochets pour une façade de 22 m² ?</p>
+<p><strong>c)</strong> Une boîte contient 100 crochets. Pour combien de m² de mur suffit-elle ?</p>
+<div class="table-wrap"><table>
+  <tr><th>Mur (m²)</th><th>Crochets</th></tr>
+  <tr><td>6</td><td>30</td></tr>
+  <tr><td>1</td><td>…</td></tr>
+  <tr><td>22</td><td>…</td></tr>
+  <tr><td>…</td><td>100</td></tr>
+</table></div>
+<form class="exercise-form" data-exercise="2"><fieldset><legend>Tes résultats — exercice 2</legend><div class="answer-grid"><label for="ex-2-0">a) crochets<input id="ex-2-0" name="answer-0" type="text" inputmode="decimal" autocomplete="off" data-answer="5" data-hint="30 ÷ 6" placeholder="Ton résultat"><span class="field-feedback" aria-live="polite"></span></label><label for="ex-2-1">b) crochets<input id="ex-2-1" name="answer-1" type="text" inputmode="decimal" autocomplete="off" data-answer="110" data-hint="5 × 22" placeholder="Ton résultat"><span class="field-feedback" aria-live="polite"></span></label><label for="ex-2-2">c) m²<input id="ex-2-2" name="answer-2" type="text" inputmode="decimal" autocomplete="off" data-answer="20" data-hint="100 ÷ 5" placeholder="Ton résultat"><span class="field-feedback" aria-live="polite"></span></label></div><button class="button primary" type="submit">Vérifier mes réponses</button><p class="exercise-feedback" aria-live="polite"></p></fieldset></form>
+
+<h3>3. Le rythme de Karim</h3>
+<p>En 3 heures, Karim monte 6 m² de mur en blocs. À partir de cet exercice, fais ton tableau toi-même.</p>
+<p><strong>a)</strong> Combien de m² monte-t-il en 1 heure ?</p>
+<p><strong>b)</strong> Combien de m² monte-t-il en 7 heures ?</p>
+<p><strong>c)</strong> Il reste 16 m² à monter. Combien d'heures lui faut-il ?</p>
+<form class="exercise-form" data-exercise="3"><fieldset><legend>Tes résultats — exercice 3</legend><div class="answer-grid"><label for="ex-3-0">a) m²<input id="ex-3-0" name="answer-0" type="text" inputmode="decimal" autocomplete="off" data-answer="2" data-hint="6 ÷ 3" placeholder="Ton résultat"><span class="field-feedback" aria-live="polite"></span></label><label for="ex-3-1">b) m²<input id="ex-3-1" name="answer-1" type="text" inputmode="decimal" autocomplete="off" data-answer="14" data-hint="2 × 7" placeholder="Ton résultat"><span class="field-feedback" aria-live="polite"></span></label><label for="ex-3-2">c) heures<input id="ex-3-2" name="answer-2" type="text" inputmode="decimal" autocomplete="off" data-answer="8" data-hint="16 ÷ 2" placeholder="Ton résultat"><span class="field-feedback" aria-live="polite"></span></label></div><button class="button primary" type="submit">Vérifier mes réponses</button><p class="exercise-feedback" aria-live="polite"></p></fieldset></form>
+
+<h3>4. Les blocs</h3>
+<p>Pour 6 m² de mur, il a fallu 75 blocs.</p>
+<p><strong>a)</strong> Combien de blocs pour 1 m² ? Tu vas trouver un nombre à virgule : c'est normal.</p>
+<p><strong>b)</strong> Combien de blocs faut-il commander pour 13 m² ? Attention à l'arrondi.</p>
+<p><strong>c)</strong> Il te reste 100 blocs. Combien de m² peux-tu encore monter ?</p>
+<form class="exercise-form" data-exercise="4"><fieldset><legend>Tes résultats — exercice 4</legend><div class="answer-grid"><label for="ex-4-0">a) blocs par m²<input id="ex-4-0" name="answer-0" type="text" inputmode="decimal" autocomplete="off" data-answer="12.5" data-hint="75 ÷ 6" placeholder="Ton résultat"><span class="field-feedback" aria-live="polite"></span></label><label for="ex-4-1">b) blocs à commander<input id="ex-4-1" name="answer-1" type="text" inputmode="decimal" autocomplete="off" data-answer="163" data-hint="12,5 × 13 = 162,5 ; arrondis au-dessus" placeholder="Ton résultat"><span class="field-feedback" aria-live="polite"></span></label><label for="ex-4-2">c) m²<input id="ex-4-2" name="answer-2" type="text" inputmode="decimal" autocomplete="off" data-answer="8" data-hint="100 ÷ 12,5" placeholder="Ton résultat"><span class="field-feedback" aria-live="polite"></span></label></div><button class="button primary" type="submit">Vérifier mes réponses</button><p class="exercise-feedback" aria-live="polite"></p></fieldset></form>
+
+<h3>5. Le plan</h3>
+<p>Sur le plan, la façade mesure 20 cm. En vrai, elle fait 10 m.</p>
+<p><strong>a)</strong> Combien de mètres représente 1 cm sur le plan ?</p>
+<p><strong>b)</strong> Le mur du garage mesure 9 cm sur le plan. Quelle est sa vraie longueur ?</p>
+<p><strong>c)</strong> Une porte fait 90 cm de large en vrai. Combien mesure-t-elle sur le plan ? Astuce : travaille en centimètres.</p>
+<form class="exercise-form" data-exercise="5"><fieldset><legend>Tes résultats — exercice 5</legend><div class="answer-grid"><label for="ex-5-0">a) m par cm sur le plan<input id="ex-5-0" name="answer-0" type="text" inputmode="decimal" autocomplete="off" data-answer="0.5" data-hint="10 ÷ 20" placeholder="Ton résultat"><span class="field-feedback" aria-live="polite"></span></label><label for="ex-5-1">b) m<input id="ex-5-1" name="answer-1" type="text" inputmode="decimal" autocomplete="off" data-answer="4.5" data-hint="9 × 0,5" placeholder="Ton résultat"><span class="field-feedback" aria-live="polite"></span></label><label for="ex-5-2">c) cm sur le plan<input id="ex-5-2" name="answer-2" type="text" inputmode="decimal" autocomplete="off" data-answer="1.8" data-hint="90 ÷ 50, en centimètres" placeholder="Ton résultat"><span class="field-feedback" aria-live="polite"></span></label></div><button class="button primary" type="submit">Vérifier mes réponses</button><p class="exercise-feedback" aria-live="polite"></p></fieldset></form>
+
+<h2>Les pièges</h2>
+<p>Ici, la règle de trois appliquée sans réfléchir donne un mauvais résultat. Avant de calculer, demande-toi : est-ce que chaque m² demande toujours la même quantité ?</p>
+
+<h3>6. Deux fois plus grand</h3>
+<p>Un mur de 4 m de long et 1 m de haut demande 50 blocs. Ton collègue dit : « Le prochain fait 8 m de long et 2 m de haut. Il est deux fois plus grand, donc 100 blocs. » A-t-il raison ? Combien de blocs faut-il vraiment ?</p>
+<form class="exercise-form" data-exercise="6"><fieldset><legend>Ta réponse — exercice 6</legend><label for="ex-6">Résultat en blocs<input id="ex-6" type="text" inputmode="decimal" autocomplete="off" data-answer="200" data-hint="Le premier mur fait 4 m², le second 16 m² : la surface est multipliée par 4. Donc 50 × 4 = 200 blocs." placeholder="Ton résultat"><span class="field-feedback" aria-live="polite"></span></label><label for="why-6">Pourquoi ?<textarea id="why-6" rows="3" placeholder="Explique ton raisonnement avec tes mots."></textarea></label><button class="button primary" type="submit">Vérifier mon résultat</button><p class="exercise-feedback" aria-live="polite"></p><p class="reason-note">Ton explication se discute avec le formateur ; elle n’est pas corrigée automatiquement.</p></fieldset></form>
+
+<h3>7. Le béton qui durcit</h3>
+<p>Dans cet exercice, on retient un délai de 28 jours pour une dalle de béton de 10 m² et 12 cm d’épaisseur. Combien de jours faut-il pour une dalle de 20 m², de même épaisseur, coulée le même jour ?</p>
+<form class="exercise-form" data-exercise="7"><fieldset><legend>Ta réponse — exercice 7</legend><label for="ex-7">Résultat en jours<input id="ex-7" type="text" inputmode="decimal" autocomplete="off" data-answer="28" data-hint="Dans l’hypothèse de cet exercice, le délai reste 28 jours. Doubler la surface ne permet pas de déduire un nouveau délai par règle de trois." placeholder="Ton résultat"><span class="field-feedback" aria-live="polite"></span></label><label for="why-7">Pourquoi ?<textarea id="why-7" rows="3" placeholder="Explique ton raisonnement avec tes mots."></textarea></label><button class="button primary" type="submit">Vérifier mon résultat</button><p class="exercise-feedback" aria-live="polite"></p><p class="reason-note">Ton explication se discute avec le formateur ; elle n’est pas corrigée automatiquement.</p></fieldset></form>
+
+<hr>
+
+<details class="corrige copy-details"><summary>Corrigé et repères pour le formateur</summary>
+<h1>Corrigé formateur</h1>
+<p>Réponses des 7 exercices, avec le calcul « pour 1 ». Les résultats utilisent les hypothèses des énoncés ; adapte les exercices aux matériaux de l’atelier.</p>
+
+<h2>Exercices 1 à 5</h2>
+<div class="table-wrap"><table>
+  <tr><th>N°</th><th>a) Pour 1</th><th>b) Calcul</th><th>c) Chemin inverse</th></tr>
+  <tr><td>1</td><td>27 ÷ 3 = 9 seaux par sac</td><td>9 × 5 = 45 seaux</td><td>63 ÷ 9 = 7 sacs</td></tr>
+  <tr><td>2</td><td>30 ÷ 6 = 5 crochets par m²</td><td>5 × 22 = 110 crochets</td><td>100 ÷ 5 = 20 m²</td></tr>
+  <tr><td>3</td><td>6 ÷ 3 = 2 m² par heure</td><td>2 × 7 = 14 m²</td><td>16 ÷ 2 = 8 heures</td></tr>
+  <tr><td>4</td><td>75 ÷ 6 = 12,5 blocs par m²</td><td>12,5 × 13 = 162,5, donc 163 blocs (arrondi au-dessus)</td><td>100 ÷ 12,5 = 8 m²</td></tr>
+  <tr><td>5</td><td>10 m ÷ 20 = 0,5 m par cm, soit l'échelle 1/50</td><td>9 × 0,5 = 4,50 m</td><td>90 cm ÷ 50 cm = 1,8 cm</td></tr>
+</table></div>
+<p>Exercice 4 : sur un vrai chantier, on ajoute une marge pour la casse. Bonne transition vers une séance sur les pourcentages.</p>
+
+<h2>Les pièges</h2>
+<ul>
+  <li><strong>6. Deux fois plus grand : non, 200 blocs.</strong> On raisonne en m². Premier mur : 4 × 1 = 4 m² pour 50 blocs, soit 12,5 au m². Second mur : 8 × 2 = 16 m², quatre fois plus, donc 200 blocs.</li>
+  <li><strong>7. Le béton qui durcit : 28 jours dans l’hypothèse donnée.</strong> Doubler la surface ne permet pas de calculer un délai par proportionnalité. Ce nombre sert à l’exercice, pas à décider d’une intervention sur du béton réel.</li>
+</ul>
+
+<h2>Pistes d'animation</h2>
+<ul>
+  <li>Faire dire à voix haute « Pour 1 m², il faut … » avant de taper le calcul.</li>
+  <li>Pour les pièges, laisser chacun annoncer sa réponse, puis faire expliquer ce qui cloche avant de corriger.</li>
+  <li>Si l'appli « Combien de blocs ? » sert dans l'atelier, les exercices 4 et 6 permettent de refaire à la main ce qu'elle calcule.</li>
+</ul>
+
+<h2>Sources</h2>
+<ul>
+  <li>Crochets de mur creux : minimum 5 par m² selon l'annexe nationale belge de l'Eurocode 6 (NBN EN 1996-1-1). <a href="https://www.plaka-solutions.com/fileadmin/user_upload/catalogue-produit/02.05.03/2.technical-data-sheet/02.05.03_LEVIAT_f_FR_CROCHET_N3_TORSADE_DROIT_Fiche_techn_V02_2020-12-02.pdf">Plaka / Leviat, fiche technique crochet n°3</a></li>
+  <li>Mortier de montage pour 1 sac de 25 kg (dosage 300 kg/m³) : sable ×9, environ 12 L d'eau, environ 90 L de mortier. <a href="https://www.lafarge.fr/sites/france/files/docs/lafarge_fiche_produit_loriginal_a4_06-24.pdf">Lafarge, fiche produit L'Original</a>. Fiche française ; l'unité du sable y figure en pictogramme, illisible dans l'extraction du PDF : interprétée comme des seaux, à confirmer sur la fiche.</li>
+  <li>Blocs de 39 × 19 cm : 12,5 au m² avec des joints de 1 cm (40 × 20 cm = 800 cm² par bloc ; 10 000 ÷ 800 = 12,5).</li>
+  <li>Rythme de travail, boîte de 100 crochets : données d'exercice plausibles, non sourcées.</li>
+</ul>
+</details>
+
+<footer class="guide-footer"><img src="assets/logo-digital-factory.png" alt="Digital Factory by Forem" width="813" height="187"><p>Déclic Chantier · Comprendre avant d’automatiser.</p><a class="text-link" href="index.html?session=4#parcours">Retour à la séance IA</a></footer>
+</main><a class="menu-return" href="index.html?session=4#atelier-menu" data-return-menu aria-label="Revenir au menu des demi-journées"><span>MENU</span></a>
+</body>
+</html>
