@@ -105,7 +105,9 @@
 
 
 
-<footer class="guide-footer"><img src="assets/logo-digital-factory.png" alt="Digital Factory by Forem" width="813" height="187"><p>Déclic Chantier · Comprendre avant d’automatiser.</p><a class="text-link" href="index.html?session=4#parcours">Retour à la séance IA</a></footer>
+<footer class="guide-footer"><img src="assets/logo-digital-factory.png" alt="Digital Factory by Forem" width="813" height="187"><p>Déclic Chantier · Comprendre avant d’automatiser.</p><a class="text-link" href="index.html?session=4#parcours">Retour à la séance IA</a><button type="button" class="text-link trainer-entry" data-open-trainer>Espace formateur</button></footer>
 </main><a class="menu-return" href="index.html?session=4#atelier-menu" data-return-menu aria-label="Revenir au menu des demi-journées"><span>MENU</span></a>
+<dialog class="trainer-dialog" id="trainer-dialog" aria-labelledby="trainer-dialog-title">
+<form id="trainer-access-form"><h2 id="trainer-dialog-title">Espace formateur</h2><p>Saisis le code formateur pour afficher le corrigé.</p><label for="trainer-code">Code formateur</label><input id="trainer-code" name="trainer-code" type="password" inputmode="numeric" autocomplete="off" required aria-describedby="trainer-error"><p id="trainer-error" role="status" aria-live="polite"></p><div class="trainer-dialog-actions"><button class="button primary" type="submit">Afficher le corrigé</button><button class="text-link" type="button" data-close-trainer>Annuler</button></div></form></dialog>
 </body>
 </html>
