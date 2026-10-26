@@ -61,3 +61,24 @@ document.querySelectorAll('.exercise-form').forEach(form=>{
   if(Number(form.dataset.exercise)>=6&&correct===1)summary.textContent=inputs[0].dataset.hint+' Relis ton explication avec le formateur.';
  });
 });
+
+// Masquage pédagogique côté navigateur, sans authentification sécurisée.
+(()=>{
+ const dialog=document.getElementById('trainer-dialog');if(!dialog)return;
+ const form=document.getElementById('trainer-access-form'),code=document.getElementById('trainer-code'),error=document.getElementById('trainer-error');
+ const content=document.querySelector('.trainer-content'),key='declic-trainer-rule';
+ let unlocked=false;try{unlocked=sessionStorage.getItem(key)==='open';}catch{}
+ function open(){code.value='';error.textContent='';code.removeAttribute('aria-invalid');dialog.showModal();code.focus();}
+ function close(){dialog.close();if(content)location.href='regle-de-trois-sur-chantier.html';}
+ document.querySelector('[data-open-trainer]')?.addEventListener('click',open);
+ document.querySelector('[data-close-trainer]')?.addEventListener('click',close);
+ dialog.addEventListener('cancel',event=>{event.preventDefault();close();});
+ code.addEventListener('input',()=>{error.textContent='';code.removeAttribute('aria-invalid');});
+ form.addEventListener('submit',event=>{
+  event.preventDefault();if(code.value.trim()!=='3600'){error.textContent='Code incorrect. Réessaie.';code.setAttribute('aria-invalid','true');code.focus();return;}
+  if(content){content.hidden=false;dialog.close();content.querySelector('h1').setAttribute('tabindex','-1');content.querySelector('h1').focus();}
+  else{try{sessionStorage.setItem(key,'open');}catch{}location.href='regle-de-trois-corrige-formateur.html';}
+ });
+ document.querySelector('[data-lock-trainer]')?.addEventListener('click',()=>{try{sessionStorage.removeItem(key);}catch{}location.href='regle-de-trois-sur-chantier.html';});
+ if(content){if(unlocked)content.hidden=false;else open();}
+})();
