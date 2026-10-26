@@ -4,12 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Corrigé formateur — La règle de trois</title><meta name="robots" content="noindex, nofollow">
-<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="atelier-ia.css"><link rel="stylesheet" href="regle-de-trois.css"><link rel="stylesheet" href="menu-return.css"><script src="menu-return.js" defer></script>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="atelier-ia.css"><link rel="stylesheet" href="regle-de-trois.css"><link rel="stylesheet" href="menu-return.css"><script src="regle-de-trois.js" defer></script><script src="menu-return.js" defer></script>
 </head>
 <body class="guide-page rule-page">
 <a class="skip" href="#main">Aller au contenu</a>
 <header class="header"><a href="index.html?session=4#parcours" class="brand"><span>DÉCLIC CHANTIER<span class="brand-small">UN ATELIER DIGITAL FACTORY</span></span></a><a class="text-link" href="index.html?session=4#parcours">← Retour à la séance IA</a></header>
 <main class="guide-wrap rule-wrap" id="main">
+<div class="trainer-content" hidden>
 <p class="eyebrow">REPÈRES POUR LE FORMATEUR</p>
 <h1>Corrigé formateur</h1>
 <p>Réponses des 7 exercices, avec le calcul « pour 1 ». Les résultats utilisent les hypothèses des énoncés ; adapte les exercices aux matériaux de l’atelier.</p>
@@ -46,7 +47,11 @@
   <li>Rythme de travail, boîte de 100 crochets : données d'exercice plausibles, non sourcées.</li>
 </ul>
 <p><a class="text-link" href="regle-de-trois-sur-chantier.html">Retour aux exercices</a></p>
+<p><button class="text-link" type="button" data-lock-trainer>Masquer le corrigé et revenir aux exercices</button></p></div>
+<noscript>Active JavaScript pour ouvrir l’espace formateur.</noscript>
 <footer class="guide-footer"><img src="assets/logo-digital-factory.png" alt="Digital Factory by Forem" width="813" height="187"><p>Déclic Chantier · Comprendre avant d’automatiser.</p><a class="text-link" href="index.html?session=4#parcours">Retour à la séance IA</a></footer>
 </main><a class="menu-return" href="index.html?session=4#atelier-menu" data-return-menu aria-label="Revenir au menu des demi-journées"><span>MENU</span></a>
+<dialog class="trainer-dialog" id="trainer-dialog" aria-labelledby="trainer-dialog-title">
+<form id="trainer-access-form"><h2 id="trainer-dialog-title">Espace formateur</h2><p>Saisis le code formateur pour afficher le corrigé.</p><label for="trainer-code">Code formateur</label><input id="trainer-code" name="trainer-code" type="password" inputmode="numeric" autocomplete="off" required aria-describedby="trainer-error"><p id="trainer-error" role="status" aria-live="polite"></p><div class="trainer-dialog-actions"><button class="button primary" type="submit">Afficher le corrigé</button><button class="text-link" type="button" data-close-trainer>Annuler</button></div></form></dialog>
 </body>
 </html>
